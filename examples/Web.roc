@@ -5,7 +5,7 @@ module [
 import ws.Http exposing [Request, Response]
 import ws.Task exposing [Task]
 
-import Crisp
+import crisp.Crisp
 
 middleware : Request, (Request -> Task Response _) -> Task Response _
 middleware = \request0, handler ->
