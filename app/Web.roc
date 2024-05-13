@@ -8,7 +8,8 @@ import ws.Task exposing [Task]
 import Crisp
 
 middleware : Request, (Request -> Task Response _) -> Task Response _
-middleware = \request, handler ->
-    {} <- Crisp.logRequest request
+middleware = \request0, handler ->
+    {} <- Crisp.logRequest request0
     {} <- Crisp.rescueCrashes
-    handler request
+    request1 <- Crisp.handleHead request0
+    handler request1
