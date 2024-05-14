@@ -2,5 +2,7 @@
 !*/
 !.gitignore
 
+!/README.md
+
 !/package/**/*.roc
 !/examples/**/*.roc
