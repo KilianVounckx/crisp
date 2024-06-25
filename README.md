@@ -1,3 +1,6 @@
+This repo is archived, because with backpassing removed, the middleware API is
+not possible anymore.
+
 # Crisp
 
 A proof of concept web framework built on top of
